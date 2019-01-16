@@ -1,23 +1,19 @@
 import React from 'react'
 import Flip from 'react-reveal/Flip'
-import './main.css'
+import './StatisticsBanner.css'
+import Statistic from './Statistic'
+import customer from '../../images/satisfied-customer.svg'
+import time from '../../images/time-is-money.svg'
+import money from '../../images/money-bag.svg'
 
-const main = () => {
+const StatisticsBanner = () => {
   return (
-    <div>
-      <div className="react-reveal-main">
-        <Flip top cascade duration={2000}>
-          1M Customers Satisfied
-        </Flip>
-        <Flip bottom cascade duration={2000}>
-          1M Customers Satisfied
-        </Flip>
-        <Flip top cascade duration={2000}>
-          1M Customers Satisfied
-        </Flip>
-      </div>
+    <div className="react-reveal-main">
+      <Statistic text="+25% more efficient" image={time} />
+      <Statistic text="1M customers satisfied" image={customer} />
+      <Statistic text="1.5x increase in profit" image={money} />
     </div>
   )
 }
 
-export default main
+export default StatisticsBanner

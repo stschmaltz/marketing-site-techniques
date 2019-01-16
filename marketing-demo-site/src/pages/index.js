@@ -9,13 +9,29 @@ import StatsAnimation from '../modules/react-reveal/StatisticsBanner'
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <h1>Hi people</h1>
-    <p>Welcome.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        flexWrap: 'wrap',
+      }}
+    >
+      <h1>Hi people</h1>
+      <p>Welcome.</p>
+      <div
+        style={{
+          width: '100vw',
+          maxWidth: `300px`,
+        }}
+      >
+        <Image path="gatsby-astronaut.png" />
+      </div>
     </div>
-    <div style={{ height: `600px`, marginBottom: `1.45rem` }} />
+    <div style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px`}} />
     <StatsAnimation />
+    <div style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px`}} />
+    <div style={{ backgroundColor: 'rebeccapurple', height: `600px`}} />
     {/* <Link to="/page-2/">Go to page 2</Link> */}
   </Layout>
 )
