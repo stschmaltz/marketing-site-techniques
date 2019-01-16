@@ -4,7 +4,8 @@ import { Link } from 'gatsby'
 import Layout from '../components/layout'
 import Image from '../components/image'
 import SEO from '../components/seo'
-import StatsAnimation from '../modules/react-reveal/StatisticsBanner'
+import StatsAnimation from '../modules/statistics-banner/StatisticsBanner'
+import Footer from '../modules/footer/Footer'
 
 const IndexPage = () => (
   <Layout>
@@ -28,11 +29,14 @@ const IndexPage = () => (
         <Image path="gatsby-astronaut.png" />
       </div>
     </div>
-    <div style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px`}} />
+    <div
+      style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px` }}
+    />
     <StatsAnimation />
-    <div style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px`}} />
-    <div style={{ backgroundColor: 'rebeccapurple', height: `600px`}} />
-    {/* <Link to="/page-2/">Go to page 2</Link> */}
+    <div
+      style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px` }}
+    />
+    <Footer />
   </Layout>
 )
 

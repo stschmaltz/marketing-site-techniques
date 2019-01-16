@@ -1,0 +1,7 @@
+.footer__main-container {
+  background-color: rebeccapurple;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}

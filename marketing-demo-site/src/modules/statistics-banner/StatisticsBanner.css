@@ -1,4 +1,4 @@
-.react-reveal-main {
+.statistic-banner__main-container {
   background: #1c92d2; /* fallback for old browsers */
   background: linear-gradient(
     173deg,
@@ -14,7 +14,7 @@
   padding: 2rem;
 }
 @media (max-width: 600px) {
-  .react-reveal-main {
+  .statistic-banner__main-container {
     height: 100%;
     flex-direction: column;
   }
