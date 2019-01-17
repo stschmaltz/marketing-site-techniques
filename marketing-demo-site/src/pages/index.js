@@ -31,11 +31,15 @@ const IndexPage = () => (
     </div>
     <div
       style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px` }}
-    />
+    >
+      new features coming soon
+    </div>
     <StatsAnimation />
     <div
       style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px` }}
-    />
+    >
+      new features coming soon
+    </div>
     <Footer />
   </Layout>
 )

@@ -7,3 +7,25 @@
   flex-direction: column;
   justify-content: center;
 }
+.social-media-bar__label {
+  color: #eee;
+  margin-bottom: 0.2rem;
+}
+.social-media-bar__brand-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-bar__fa-icon {
+  height: 100%;
+  width: 100%;
+  color: #eee;
+}
+
+@media (max-width: 600px) {
+  .social-media-bar__brand-bar {
+    flex-wrap: wrap;
+  }
+}

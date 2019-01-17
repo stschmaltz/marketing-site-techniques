@@ -19,6 +19,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
+    "react-icons": "^3.3.0",
     "react-pose": "^4.0.5",
     "react-reveal": "^1.2.2",
     "react-typography": "^0.16.18",
@@ -31,6 +32,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "now-build": "npm run build",
     "develop": "gatsby develop",
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
