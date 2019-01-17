@@ -1,7 +1,8 @@
 import React from 'react'
 import './SocialMediaBar.css'
 import SocialMediaLink from './SocialMediaLink'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Fade from 'react-reveal/Fade'
+
 import {
   FaInstagram,
   FaTwitter,
@@ -9,41 +10,43 @@ import {
   FaDiscord,
   FaFacebook,
   FaGoodreads,
-  FaLinkedin,
-  FaReddit,
+  FaLinkedinIn,
+  FaRedditAlien,
 } from 'react-icons/fa'
 
 const SocialMediaBar = () => {
   return (
-    <div className="social-media-bar__main-container">
-      <span className="social-media-bar__label">Follow Us</span>
-      <div className="social-media-bar__brand-bar">
-        <SocialMediaLink>
-          <FaInstagram className="social-media-bar__fa-icon" />
-        </SocialMediaLink>
-        <SocialMediaLink>
-          <FaFacebook className="social-media-bar__fa-icon" />
-        </SocialMediaLink>
-        <SocialMediaLink>
-          <FaTwitter className="social-media-bar__fa-icon" />
-        </SocialMediaLink>
-        <SocialMediaLink>
-          <FaTwitch className="social-media-bar__fa-icon" />
-        </SocialMediaLink>
-        <SocialMediaLink>
-          <FaDiscord className="social-media-bar__fa-icon" />
-        </SocialMediaLink>
-        <SocialMediaLink>
-          <FaGoodreads className="social-media-bar__fa-icon" />
-        </SocialMediaLink>
-        <SocialMediaLink>
-          <FaLinkedin className="social-media-bar__fa-icon" />
-        </SocialMediaLink>
-        <SocialMediaLink>
-          <FaReddit className="social-media-bar__fa-icon" />
-        </SocialMediaLink>
+    <Fade delay={300}>
+      <div className="social-media-bar__main-container">
+        <span className="social-media-bar__label">Follow Us</span>
+        <div className="social-media-bar__brand-bar">
+          <SocialMediaLink>
+            <FaInstagram className="social-media-bar__fa-icon" />
+          </SocialMediaLink>
+          <SocialMediaLink>
+            <FaFacebook className="social-media-bar__fa-icon" />
+          </SocialMediaLink>
+          <SocialMediaLink>
+            <FaTwitter className="social-media-bar__fa-icon" />
+          </SocialMediaLink>
+          <SocialMediaLink>
+            <FaTwitch className="social-media-bar__fa-icon" />
+          </SocialMediaLink>
+          <SocialMediaLink>
+            <FaLinkedinIn className="social-media-bar__fa-icon" />
+          </SocialMediaLink>
+          <SocialMediaLink>
+            <FaRedditAlien className="social-media-bar__fa-icon" />
+          </SocialMediaLink>
+          <SocialMediaLink>
+            <FaDiscord className="social-media-bar__fa-icon" />
+          </SocialMediaLink>
+          <SocialMediaLink>
+            <FaGoodreads className="social-media-bar__fa-icon" />
+          </SocialMediaLink>
+        </div>
       </div>
-    </div>
+    </Fade>
   )
 }
 
