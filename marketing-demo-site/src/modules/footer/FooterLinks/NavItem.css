@@ -1,0 +1,14 @@
+.nav-item__links-list {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+}
+.nav-item__container {
+  margin: 0 1rem;
+}
+
+.nav-item__header {
+  font-weight: bold;
+  font-size: 1rem;
+}

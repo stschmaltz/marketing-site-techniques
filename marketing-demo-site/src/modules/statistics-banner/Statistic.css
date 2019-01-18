@@ -1,8 +1,11 @@
 .statistic__image {
   width: 100px;
-  fill: red;
 }
-
+@media (max-width: 600px) {
+  .statistic__image {
+    width: 70px;
+  }
+}
 .statistic__main-container {
   display: flex;
   flex-direction: column;

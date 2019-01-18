@@ -16,7 +16,7 @@ import {
 
 const SocialMediaBar = () => {
   return (
-    <Fade delay={200}>
+    <Fade delay={400} duration={1500}>
       <div className="social-media-bar__main-container">
         <span className="social-media-bar__label">Follow Us</span>
         <div className="social-media-bar__brand-bar">
