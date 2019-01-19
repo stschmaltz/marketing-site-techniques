@@ -7,11 +7,16 @@ const FooterLinks = () => {
     <div className="footer-links__main-container">
       <div className="footer-links__brand-column">
         <div className="footer-links__brand">😎Cool Company</div>
-        <div className="footer-links__brand-copyright">© Cool Company {new Date().getFullYear()}</div>
+        <div className="footer-links__brand-copyright">
+          © Cool Company {new Date().getFullYear()}
+        </div>
       </div>
       <div className="footer-links__nav-container">
         <nav className="footer-links__nav">
-          <NavItem header="Products" links={['Overview', 'Roadmap', 'Plans']} />
+          <NavItem
+            header="Products"
+            links={['Overview', 'Roadmap', 'Pricing']}
+          />
           <NavItem
             header="About Us"
             links={[
@@ -28,7 +33,7 @@ const FooterLinks = () => {
               'Featured Story',
               'Latest Posts',
               'In The Media',
-              'Subscribe To Newsletter',
+              'Newsletter',
             ]}
           />
           <NavItem header="Support" links={['User Guide', 'Safety', 'FAQ']} />

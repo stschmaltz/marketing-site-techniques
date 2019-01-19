@@ -7,7 +7,7 @@
 }
 
 .footer-links__brand-column {
-  margin-left: 3rem;
+  margin-left: 5%;
   /* background-color: darkkhaki; */
   flex-grow: 1;
   flex-shrink: 0;
@@ -21,12 +21,14 @@
 
 .footer-links__brand-copyright {
   font-size: 1rem;
+  margin-left: 1.85rem;
 }
 
 .footer-links__nav-container {
   flex-grow: 1;
   flex-shrink: 1;
-  max-width: 900px;
+  max-width: 680px;
+  min-width: 550px;
 }
 
 .footer-links__nav {
