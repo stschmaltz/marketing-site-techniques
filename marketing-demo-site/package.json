@@ -22,6 +22,7 @@
     "react-icons": "^3.3.0",
     "react-pose": "^4.0.5",
     "react-reveal": "^1.2.2",
+    "react-sizeme": "^2.5.2",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
     "typography-theme-funston": "^0.16.18"

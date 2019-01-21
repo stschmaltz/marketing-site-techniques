@@ -2,7 +2,9 @@ import React from 'react'
 import './FooterLinks.css'
 import NavItem from './NavItem'
 
-const FooterLinks = () => {
+const FooterLinks = ({ width }) => {
+  const renderLinks = width > 800
+  console.log(renderLinks)
   return (
     <div className="footer-links__main-container">
       <div className="footer-links__brand-column">
@@ -14,10 +16,12 @@ const FooterLinks = () => {
       <div className="footer-links__nav-container">
         <nav className="footer-links__nav">
           <NavItem
+            renderLinks={renderLinks}
             header="Products"
             links={['Overview', 'Roadmap', 'Pricing']}
           />
           <NavItem
+            renderLinks={renderLinks}
             header="About Us"
             links={[
               'Our Story',
@@ -28,6 +32,7 @@ const FooterLinks = () => {
             ]}
           />
           <NavItem
+            renderLinks={renderLinks}
             header="News"
             links={[
               'Featured Story',
@@ -36,7 +41,11 @@ const FooterLinks = () => {
               'Newsletter',
             ]}
           />
-          <NavItem header="Support" links={['User Guide', 'Safety', 'FAQ']} />
+          <NavItem
+            renderLinks={renderLinks}
+            header="Support"
+            links={['User Guide', 'Safety', 'FAQ']}
+          />
         </nav>
       </div>
     </div>

@@ -3,16 +3,19 @@ import './NavItem.css'
 
 const mapLinksToLI = links =>
   links.map(link => (
-    <li>
+    <li key={link}>
       <a>{link}</a>
     </li>
   ))
 
-const NavItem = ({ header, links }) => {
+const NavItem = ({ header, links, renderLinks }) => {
+  console.log(renderLinks)
   return (
     <div className="nav-item__container">
       <a className="nav-item__header">{header}</a>
-      <ul className="nav-item__links-list">{mapLinksToLI(links)}</ul>
+      {renderLinks && (
+        <ul className="nav-item__links-list">{mapLinksToLI(links)}</ul>
+      )}
     </div>
   )
 }
