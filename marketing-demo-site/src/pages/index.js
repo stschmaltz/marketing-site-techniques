@@ -6,6 +6,7 @@ import Image from '../components/image'
 import SEO from '../components/seo'
 import StatsAnimation from '../modules/statistics-banner/StatisticsBanner'
 import Footer from '../modules/footer/Footer'
+import PeriscopePromo from '../modules/periscope-promo/PeriscopePromo'
 
 const IndexPage = () => (
   <Layout>
@@ -29,17 +30,10 @@ const IndexPage = () => (
         <Image path="gatsby-astronaut.png" />
       </div>
     </div>
-    <div
-      style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px` }}
-    >
-      new features coming soon
-    </div>
+
     <StatsAnimation />
-    <div
-      style={{ backgroundColor: 'rgba(99, 36, 148, 0.14)', height: `600px` }}
-    >
-      new features coming soon
-    </div>
+    <PeriscopePromo />
+
     <Footer />
   </Layout>
 )
