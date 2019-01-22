@@ -18,9 +18,13 @@
   /* background-color: darkkhaki; */
   flex-grow: 1;
   flex-shrink: 0;
-  flex-basis: 120px;
+  flex-basis: 240px;
 }
-
+@media (max-width: 800px) {
+  .footer-links__brand-column {
+    flex-basis: 120px;
+  }
+}
 .footer-links__brand {
   font-size: 1.5rem;
   font-weight: bold;
