@@ -1,0 +1,26 @@
+.periscope-pricing-badge {
+  position: absolute;
+  width: 100%;
+  height: 150px;
+  top: calc(50% - 75px);
+  left: 0%;
+  /* border-radius: 25px; */
+  padding: 1rem;
+  background-color: #663399b3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: #ffa600;
+}
+
+.periscope-pricing-link {
+  background-color: #ffa600b3;
+  padding: 10px;
+
+  border-radius: 10px;
+  color: #eee;
+}
+
+.periscope-pricing-cta {
+}
