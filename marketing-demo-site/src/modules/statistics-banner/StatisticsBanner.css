@@ -7,7 +7,7 @@
     #4ebfe5
   ); /* w3c,IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
   width: 100%;
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: space-around;
   align-items: center;

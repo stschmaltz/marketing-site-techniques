@@ -30,7 +30,7 @@ class PeriscopeBanner extends Component {
       <div className="periscope-pricing-badge">
         <div>
           <span className="periscope-pricing-cta">
-            Let Us Help Take Your Business Further
+            Take Your Business To The Next Level
           </span>
         </div>
         <Box>

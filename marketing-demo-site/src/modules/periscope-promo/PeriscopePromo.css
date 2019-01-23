@@ -2,8 +2,8 @@
   position: relative;
   height: 75vh;
   width: 100%;
-  background: url('../../images/business-higher.jpg') no-repeat fixed
-    content-box;
+  background: linear-gradient(rgba(0, 0, 0, 0.04), rgba(0, 0, 0, 0.04)),
+    url('../../images/business-higher.jpg') no-repeat fixed content-box;
   background-position: center;
   background-size: cover;
   /* -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0 49%, 0% 0%);
