@@ -1,6 +1,16 @@
 import React, { Component } from 'react'
+import posed from 'react-pose'
 import './PeriscopeBanner.css'
-import VisibilitySensor from 'react-visibility-sensor'
+
+const Box = posed.div({
+  pressable: true,
+  init: {
+    scale: 1,
+  },
+  press: {
+    scale: 0.95,
+  },
+})
 
 class PeriscopeBanner extends Component {
   constructor(props) {
@@ -23,7 +33,9 @@ class PeriscopeBanner extends Component {
             Let Us Help Take Your Business Further
           </span>
         </div>
-        <a className="periscope-pricing-link">See Our Plans</a>
+        <Box>
+          <a className="periscope-pricing-link">See Our Plans</a>
+        </Box>
       </div>
     )
   }

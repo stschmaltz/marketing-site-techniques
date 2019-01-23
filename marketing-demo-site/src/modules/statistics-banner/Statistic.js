@@ -5,7 +5,7 @@ import './Statistic.css'
 const Statistic = ({ image, text }) => {
   return (
     <div>
-      <Flip cascade top duration={1800} delay={300}>
+      <Flip top duration={1800} delay={300}>
         <div className="statistic__main-container">
           <img className="statistic__image" src={image} />
           <span className="statistic__text">{text}</span>

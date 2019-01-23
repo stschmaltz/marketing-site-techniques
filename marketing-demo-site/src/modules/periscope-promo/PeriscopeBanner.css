@@ -16,11 +16,37 @@
 
 .periscope-pricing-link {
   background-color: #ffa600b3;
+  box-shadow: 0 5px 0 #ca8300b3;
   padding: 10px;
+  text-decoration: none;
+  position: relative;
 
   border-radius: 10px;
   color: #eee;
 }
 
+.periscope-pricing-link:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #eee;
+  background-color: #ffa600d0;
+}
+
+.periscope-pricing-link:active {
+  top: 4px;
+  box-shadow: 0 0 #ca8300b3;
+}
+/* loginLink: {
+  margin: '0.5rem',
+  backgroundColor: '#2196F3',
+  boxShadow: '0 5px 0 #0D47A1',
+  color: 'white',
+  padding: '1rem 1.5rem',
+  textDecoration: 'none',
+  textTransform: 'uppercase',
+  borderRadius: 10,
+}, */
+
 .periscope-pricing-cta {
+  text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.596);
 }

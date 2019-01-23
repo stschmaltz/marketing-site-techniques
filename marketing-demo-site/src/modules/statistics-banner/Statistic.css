@@ -16,4 +16,5 @@
 
 .statistic__text {
   color: #eee;
+  text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.596);
 }

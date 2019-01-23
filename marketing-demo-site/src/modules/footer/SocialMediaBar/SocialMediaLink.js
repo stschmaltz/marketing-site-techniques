@@ -1,5 +1,6 @@
 import React from 'react'
 import posed from 'react-pose'
+import './SocialMediaLink.css'
 
 const Box = posed.div({
   hoverable: true,
@@ -17,9 +18,9 @@ const Box = posed.div({
 
 const SocialMediaLink = ({ children }) => {
   return (
-    <Box style={{ margin: '0.2rem 0.6rem' }}>
+    <Box className="social-media-link__container">
       <a>
-        <div style={{ width: '50px', height: '50px' }}>{children}</div>
+        <div className="social-media-link__inner-container">{children}</div>
       </a>
     </Box>
   )

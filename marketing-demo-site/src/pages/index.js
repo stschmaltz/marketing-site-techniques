@@ -13,7 +13,7 @@ const IndexPage = () => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div
       style={{
-        height: '500px',
+        height: '90vh',
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
