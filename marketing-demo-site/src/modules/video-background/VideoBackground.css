@@ -17,13 +17,14 @@
   .video-background_video {
     width: auto;
     right: 40%;
-    height: 90vh;
+    height: 60vh;
   }
 }
 
 .video-background_text-container {
   /* background: white; */
   position: absolute;
+  text-align: center;
   top: 100px;
   height: 400px;
   width: 100%;

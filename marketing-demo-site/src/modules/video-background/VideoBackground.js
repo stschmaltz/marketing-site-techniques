@@ -14,7 +14,13 @@ const VideoBackground = () => {
         <source src={sample6} type="video/mp4" />
       </video>
       <div className="video-background_text-container">
-        <h1 className="video-background_text-tag">Building Cool Stuff</h1>
+        <h2 className="video-background_text-desc">
+          A Product That Is Truly Cool
+        </h2>
+        <h1 className="video-background_text-tag">
+          From A Company That Builds Cool Stuff
+        </h1>
+        <h3>Cool Company</h3>
       </div>
     </div>
   )
