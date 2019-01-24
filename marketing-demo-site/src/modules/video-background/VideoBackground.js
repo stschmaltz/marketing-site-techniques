@@ -20,7 +20,7 @@ const VideoBackground = () => {
         <h1 className="video-background_text-tag">
           From A Company That Builds Cool Stuff
         </h1>
-        <h3>Cool Company</h3>
+        <h3>😎 Cool Company</h3>
       </div>
     </div>
   )
