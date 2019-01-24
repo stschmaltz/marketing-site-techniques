@@ -7,10 +7,12 @@ import SEO from '../components/seo'
 import StatsAnimation from '../modules/statistics-banner/StatisticsBanner'
 import Footer from '../modules/footer/Footer'
 import PeriscopePromo from '../modules/periscope-promo/PeriscopePromo'
+import VideoBackground from '../modules/video-background/VideoBackground'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <VideoBackground />
     <div
       style={{
         height: '90vh',

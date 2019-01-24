@@ -1,0 +1,35 @@
+.video-background_video {
+  /* position: absolute; */
+  /* width: 100%; */
+  width: 100%;
+
+  /* vertical-align: top; */
+  /* background: rbg(0, 0, 0, 0.4); */
+}
+
+.video-background_container {
+  /* width: 100vw; */
+  z-index: -100;
+  height: 90vh;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .video-background_video {
+    width: auto;
+    right: 40%;
+    height: 90vh;
+  }
+}
+
+.video-background_text-container {
+  /* background: white; */
+  position: absolute;
+  top: 100px;
+  height: 400px;
+  width: 100%;
+  z-index: 100;
+}
+
+.video-background_text-tag {
+  width: 100%;
+}
