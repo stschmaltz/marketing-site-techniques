@@ -1,0 +1,11 @@
+.content-main_container{
+  z-index: 100;
+  position: relative;
+  margin-bottom: 420px;
+  background-color: #d7c5e5;
+}
+@media (max-width: 600px) {
+  .content-main_container {
+    margin-bottom: 600px;
+  }
+}

@@ -8,8 +8,10 @@
 }
 
 .video-background_container {
+  position: relative;
   /* width: 100vw; */
-  z-index: -100;
+  color: #eee;
+  text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.596);
   height: 90vh;
   overflow: hidden;
 }
@@ -25,10 +27,9 @@
   /* background: white; */
   position: absolute;
   text-align: center;
-  top: 100px;
+  top: 20%;
   height: 400px;
   width: 100%;
-  z-index: 100;
 }
 
 .video-background_text-tag {

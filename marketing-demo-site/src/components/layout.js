@@ -24,6 +24,7 @@ const Layout = ({ children }) => (
             margin: `0 auto`,
             maxWidth: '100%',
             paddingTop: 0,
+            backgroundColor: 'rgba(99, 36, 148, 0.14)'
           }}
         >
           {children}
