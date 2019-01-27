@@ -26,7 +26,10 @@
     "react-typography": "^0.16.18",
     "react-visibility-sensor": "^5.0.2",
     "typography": "^0.16.18",
-    "typography-theme-funston": "^0.16.18"
+    "typography-theme-funston": "^0.16.18",
+    "typography-theme-irving": "0.16.18",
+    "typography-theme-stow-lake": "0.16.18",
+    "typography-theme-twin-peaks": "0.16.18"
   },
   "keywords": [
     "gatsby"

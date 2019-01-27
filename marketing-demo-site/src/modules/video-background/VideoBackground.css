@@ -3,18 +3,31 @@
   color: #eee;
   text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
   overflow: hidden;
-  height: 90vh;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
 }
+.video-background_video-fallback-img {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
 .video-background_overlay {
   position: absolute;
   background-color: rgba(255, 255, 255, 0.1);
-  height: 90vh;
-  width: 100vw;
+  height: 100vh;
+  width: 100%;
 }
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .video-background_container {
-    height: 80vh;
+    height: 90vh;
+  }
+  .video-background_video-fallback-img {
+    height: 90vh;
+    object-fit: cover;
   }
 }
 
@@ -40,35 +53,61 @@
 }
 
 .video-background_product-desc {
+  color: #eee;
+
   padding: 1rem 2rem;
+  font-size: 2.75rem;
+}
+@media (max-width: 600px) {
+  .video-background_product-desc {
+    font-size: 1.8rem;
+    margin-top: 1rem;
+  }
 }
 @media (max-width: 350px) {
   .video-background_product-desc {
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 1.65rem;
   }
 }
 
 .video-background_company-tag {
+  color: #eee;
   width: 100%;
+  font-size: 3.25rem;
   padding: 1rem 2rem;
 }
-
+@media (max-width: 600px) {
+  .video-background_company-tag {
+    font-size: 2.35rem;
+  }
+}
 @media (max-width: 350px) {
   .video-background_company-tag {
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 2rem 0;
+    font-size: 2.25rem;
   }
 }
 
 .video-background_company-brand {
+  color: #eee;
   padding: 1rem 2rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .video-background_company-brand {
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width: 350px) {
   .video-background_company-brand {
     padding: 0.5rem;
-    margin-bottom: 0.5rem;
+    margin: 2rem 0;
+    font-size: 1.25rem;
   }
 }

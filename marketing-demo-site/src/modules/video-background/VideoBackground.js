@@ -10,11 +10,22 @@ const VideoBackground = () => {
   return (
     <div className="video-background_container">
       <div className="video-background_overlay" />
-      <video className="video-background_video" autoPlay loop muted preload>
+      <video
+        className="video-background_video"
+        poster="../../images/Sunrise.png"
+        autoPlay
+        loop
+        muted
+        preload
+      >
         <source alt="sunrise mp4" src={SunriseVideoMp4} type="video/mp4" />
         <source alt="sunrise webm" src={SunriseVideoWebm} type="video/webm" />
-        <img src={SunriseVideoPic} alt="Sunrise" />
       </video>
+      <img
+        className="video-background_video-fallback-img"
+        src={SunriseVideoPic}
+        alt="Sunrise"
+      />
       <div className="video-background_text-container">
         <Fade top duration={2000}>
           <h2 className="video-background_product-desc">

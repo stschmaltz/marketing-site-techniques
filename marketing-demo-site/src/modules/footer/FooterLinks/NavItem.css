@@ -13,6 +13,9 @@
 .nav-item__container {
   margin: 0 1rem;
 }
+.nav-item__container a {
+  color: #eee;
+}
 
 .nav-item__header {
   font-weight: bold;
