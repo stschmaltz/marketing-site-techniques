@@ -1,26 +1,34 @@
 import React from 'react'
-import sample1 from '../../images/purple.mp4'
-import sample2 from '../../images/mlky_6.mp4'
-import sample3 from '../../images/b-and-w-escalators.mp4'
-import sample4 from '../../images/purple-hourglass.mp4'
-import sample5 from '../../images/purple-lights-1080p.mp4'
-import sample6 from '../../images/Sunrise.mp4'
+import SunriseVideoMp4 from '../../images/Sunrise.mp4'
+import SunriseVideoWebm from '../../images/Sunrise.webm'
+import SunriseVideoPic from '../../images/Sunrise.png'
 import './VideoBackground.css'
+import Slide from 'react-reveal/Slide'
+import Fade from 'react-reveal/Fade'
 
 const VideoBackground = () => {
   return (
     <div className="video-background_container">
-      <video className="video-background_video" autoPlay loop muted>
-        <source src={sample6} type="video/mp4" />
+      <div className="video-background_overlay" />
+      <video className="video-background_video" autoPlay loop muted preload>
+        <source alt="sunrise mp4" src={SunriseVideoMp4} type="video/mp4" />
+        <source alt="sunrise webm" src={SunriseVideoWebm} type="video/webm" />
+        <img src={SunriseVideoPic} alt="Sunrise" />
       </video>
       <div className="video-background_text-container">
-        <h2 className="video-background_text-desc">
-          A Product That Is Truly Cool
-        </h2>
-        <h1 className="video-background_text-tag">
-          From A Company That Builds Cool Stuff
-        </h1>
-        <h3>😎 Cool Company</h3>
+        <Fade top duration={2000}>
+          <h2 className="video-background_product-desc">
+            A Product That Is Truly Cool
+          </h2>
+        </Fade>
+        <Fade top delay={1500} duration={2000}>
+          <h1 className="video-background_company-tag">
+            From A Company That Builds Cool Stuff
+          </h1>
+        </Fade>
+        <Fade top delay={3000} duration={2000}>
+          <h3 className="video-background_company-brand">😎 Cool Company</h3>
+        </Fade>
       </div>
     </div>
   )

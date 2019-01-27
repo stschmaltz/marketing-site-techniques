@@ -8,12 +8,12 @@ import StatsAnimation from '../modules/statistics-banner/StatisticsBanner'
 import Footer from '../modules/footer/Footer'
 import PeriscopePromo from '../modules/periscope-promo/PeriscopePromo'
 import VideoBackground from '../modules/video-background/VideoBackground'
-import './index.css';
+import './index.css'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-    <div className='content-main_container' >
+    <div className="content-main_container">
       <VideoBackground />
       <div
         style={{
@@ -21,15 +21,15 @@ const IndexPage = () => (
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
-          flexWrap: 'wrap',
-          zIndex: 100, position: 'relative',
+          zIndex: 100,
+          position: 'relative',
         }}
       >
-        <h1>Hi people</h1>
+        <h1 style={{ padding: '3rem' }}>Hi people</h1>
         <p>Welcome.</p>
         <div
           style={{
-            width: '100vw',
+            width: '80vw',
             maxWidth: `300px`,
           }}
         >

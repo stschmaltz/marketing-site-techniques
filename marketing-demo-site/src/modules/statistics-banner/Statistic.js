@@ -7,7 +7,7 @@ const Statistic = ({ image, text }) => {
     <div>
       <Flip top duration={1800} delay={300}>
         <div className="statistic__main-container">
-          <img className="statistic__image" src={image} />
+          <img alt="statistic image" className="statistic__image" src={image} />
           <span className="statistic__text">{text}</span>
         </div>
       </Flip>

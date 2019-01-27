@@ -1,37 +1,74 @@
-.video-background_video {
-  /* position: absolute; */
-  /* width: 100%; */
-  width: 100%;
-
-  /* vertical-align: top; */
-  /* background: rbg(0, 0, 0, 0.4); */
-}
-
 .video-background_container {
   position: relative;
-  /* width: 100vw; */
   color: #eee;
-  text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.596);
-  height: 90vh;
+  text-shadow: 1px 1px 1px rgba(20, 20, 20, 0.6);
   overflow: hidden;
+  height: 90vh;
+  width: 100vw;
 }
-@media (max-width: 600px) {
-  .video-background_video {
-    width: auto;
-    right: 40%;
-    height: 60vh;
+.video-background_overlay {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.1);
+  height: 90vh;
+  width: 100vw;
+}
+@media (max-width: 400px) {
+  .video-background_container {
+    height: 80vh;
   }
 }
 
+.video-background_video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
 .video-background_text-container {
-  /* background: white; */
   position: absolute;
   text-align: center;
   top: 20%;
-  height: 400px;
+  /* height: 60vh; */
   width: 100%;
 }
+@media (max-width: 600px) {
+  .video-background_text-container {
+    top: 0;
+    padding: 2rem 1rem;
+  }
+}
 
-.video-background_text-tag {
+.video-background_product-desc {
+  padding: 1rem 2rem;
+}
+@media (max-width: 350px) {
+  .video-background_product-desc {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.video-background_company-tag {
   width: 100%;
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 350px) {
+  .video-background_company-tag {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.video-background_company-brand {
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 350px) {
+  .video-background_company-brand {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
 }
