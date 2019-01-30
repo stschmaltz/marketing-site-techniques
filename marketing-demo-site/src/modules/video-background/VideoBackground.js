@@ -12,11 +12,12 @@ const VideoBackground = () => {
       <div className="video-background_overlay" />
       <video
         className="video-background_video"
-        poster="../../images/Sunrise.png"
+        poster={SunriseVideoPic}
         autoPlay
         loop
         muted
-        preload
+        preload="auto"
+        playsInline
       >
         <source alt="sunrise mp4" src={SunriseVideoMp4} type="video/mp4" />
         <source alt="sunrise webm" src={SunriseVideoWebm} type="video/webm" />
