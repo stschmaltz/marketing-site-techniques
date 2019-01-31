@@ -6,3 +6,4 @@ It's purpose is not to show a cohesive brand or show any actual marketing skills
 
 I built it myself in Gatsby using ReactJS. 
 
+Shane Schmaltz 🍁
